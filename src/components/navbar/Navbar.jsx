@@ -13,13 +13,13 @@ const Navbar = () => {
         </motion.span>
         <div className="social">
           <a href="#">
-            <img src="/public/facebook.png" alt="Social Icon" />
+            <img src="/facebook.png" alt="Social Icon" />
           </a>
           <a href="#">
-            <img src="/public/instagram.png" alt="Social Icon" />
+            <img src="/instagram.png" alt="Social Icon" />
           </a>
           <a href="#">
-            <img src="/public/youtube.png" alt="Social Icon" />
+            <img src="/youtube.png" alt="Social Icon" />
           </a>
         </div>
       </div>

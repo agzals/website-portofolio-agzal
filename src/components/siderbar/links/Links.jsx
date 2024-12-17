@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import { useState } from "react";
 
 const variants = {
   open: {
@@ -26,16 +25,10 @@ const itemVariants = {
   },
 };
 const Links = () => {
-  const [color, setColor] = useState({
-    color: "white",
-    Brand: "mercy",
-  });
   const items = ["Homepage", "Services", "Portofolio", "Contact", "About"];
 
   return (
     <motion.div className="links" variants={variants}>
-      <h1>mobil saya warna {color.color}</h1>
-      <button onClick={setColor(color.color("biru"))}></button>
       {items.map((item) => (
         <motion.a href={"#${item}"} key={item} variants={itemVariants}>
           {item}
