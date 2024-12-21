@@ -1,14 +1,35 @@
+import { useRef } from "react";
 import "./services.scss";
-import { motion } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 
 const Services = () => {
+  const ref = useRef();
+  const isInView = useInView(ref, { margin: "-100px" });
+
   const variants = {
     initial: {
+      x: -500,
+      y: 100,
       opacity: 0,
+    },
+    animate: {
+      x: 0,
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 1,
+        staggerChildren: 0.1,
+      },
     },
   };
   return (
-    <motion.div className="services" variants={variants}>
+    <motion.div
+      className="services"
+      variants={variants}
+      initial="initial" //whileInView="animate"
+      animate={isInView && "animate"}
+      ref={ref}
+    >
       <motion.div className="textContainer">
         <p>
           focus on helping your brand grow <br />
@@ -20,32 +41,32 @@ const Services = () => {
         <div className="title">
           <img src="/people.webp" alt="" />
           <h1>
-            <b>Unique</b> Ideas
+            <motion.b whileHover={{ color: "orange" }}>Unique</motion.b> Ideas
           </h1>
         </div>
         <div className="title">
           <h1>
-            <b>For Your</b> Business.
+            <motion.b whileHover={{ color: "orange" }}>For Your</motion.b> Business.
           </h1>
           <button>What We Do</button>
         </div>
       </motion.div>
       <motion.div className="listServices">
-        <div className="box">
+        <motion.div className="box" whileHover={{ background: "lightgray", color: "black" }}>
           <h2>Branding</h2>
           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quaerat architecto sint quibusdam? Similique illum repellendus eius suscipit. Eius, sed!</p>
           <button>Go</button>
-        </div>
-        <div className="box">
+        </motion.div>
+        <motion.div className="box" whileHover={{ background: "lightgray", color: "black" }}>
           <h2>Branding</h2>
           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quaerat architecto sint quibusdam? Similique illum repellendus eius suscipit. Eius, sed!</p>
           <button>Go</button>
-        </div>
-        <div className="box">
+        </motion.div>
+        <motion.div className="box" whileHover={{ background: "lightgray", color: "black" }}>
           <h2>Branding</h2>
           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quaerat architecto sint quibusdam? Similique illum repellendus eius suscipit. Eius, sed!</p>
           <button>Go</button>
-        </div>
+        </motion.div>
       </motion.div>
     </motion.div>
   );
