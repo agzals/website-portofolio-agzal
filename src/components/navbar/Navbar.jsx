@@ -12,10 +12,7 @@ const Navbar = () => {
           Agzal Sufi
         </motion.span>
         <div className="social">
-          <a href="#">
-            <img src="/facebook.png" alt="Social Icon" />
-          </a>
-          <a href="#">
+          <a href="https://www.instagram.com/agzalls/">
             <img src="/instagram.png" alt="Social Icon" />
           </a>
           <a href="#">

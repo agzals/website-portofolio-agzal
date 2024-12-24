@@ -10,7 +10,8 @@
     color: orange;
     font-size: 30px;
     @include mobile {
-      padding-top: calc(100vh - 100px);
+      // padding-top: calc(100vh - 100px);
+      bottom: 0;
       font-size: 24px;
     }
 
@@ -55,12 +56,18 @@
         color: gray;
       }
       button {
+        margin: auto;
         background-color: orange;
         border: none;
         width: 50%;
         height: 25px;
         border-radius: 30px;
         color: white;
+      }
+      @include mobile {
+        transform: none !important;
+        padding: 10px;
+        text-align: center;
       }
     }
   }
