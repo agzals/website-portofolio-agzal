@@ -8,13 +8,12 @@
 
   .textContainer {
     flex: 1;
-
     align-self: flex-end;
     display: flex;
     align-items: center;
     gap: 10px;
     @include mobile {
-      padding-top: 30px;
+      padding-top: 70px;
       align-self: center;
       text-align: center;
       flex-direction: column;
@@ -40,6 +39,7 @@
     flex-direction: column;
     align-items: center;
     @include mobile {
+      justify-content: center;
       margin: auto;
       width: 100%;
     }
@@ -72,6 +72,7 @@
       margin: auto;
       width: 150px;
       height: 60px;
+      color: white;
       border-radius: 50px;
       background-color: orange;
       border: none;
@@ -90,6 +91,7 @@
       border: 0.5px solid gray;
       padding: 50px;
       @include mobile {
+        padding: 25px;
         border: none;
       }
       p {
