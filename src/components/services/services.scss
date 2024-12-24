@@ -1,3 +1,4 @@
+@import "../../app.scss";
 .services {
   background: linear-gradient(180deg, #0c0c1d, #111132);
   height: 100%;
@@ -11,6 +12,12 @@
     display: flex;
     align-items: center;
     gap: 10px;
+    @include mobile {
+      align-self: center;
+      text-align: center;
+      flex-direction: column;
+    }
+
     p {
       font-size: 15px;
       color: gray;
@@ -20,6 +27,9 @@
       width: 500px;
       border: none;
       border-top: 0.5px solid gray;
+      @include mobile {
+        width: 300px;
+      }
     }
   }
   .titleContainer {
@@ -27,21 +37,37 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    @include mobile {
+      margin: auto;
+      width: 100%;
+    }
     img {
       width: 200px;
       height: 100px;
       border-radius: 50px;
       object-fit: cover;
+      @include mobile {
+        height: 50px;
+      }
     }
     .title {
       display: flex;
       gap: 50px;
+      @include mobile {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+      }
     }
     h1 {
       font-size: 85px;
       font-weight: 100px;
+      @include mobile {
+        font-size: 40px;
+      }
     }
     button {
+      margin: auto;
       width: 150px;
       height: 60px;
       border-radius: 50px;
@@ -54,11 +80,21 @@
     display: flex;
     max-width: 1366px;
     margin: auto;
+    @include mobile {
+      height: 100%;
+      flex-direction: column;
+    }
     .box {
       border: 0.5px solid gray;
       padding: 50px;
+      @include mobile {
+        border: none;
+      }
       p {
         padding-top: 10px;
+        @include mobile {
+          display: none;
+        }
       }
       button {
         margin-top: 10px;

@@ -60,7 +60,7 @@ const Hero = () => {
         Front End Website Developer
       </motion.div>
       <motion.div className="imageContainer" initial="imageScroll">
-        <motion.img variants={textVariants} animate="animasi" initial="imageScroll" className="gambar" src="/hero.png" alt="" />
+        <motion.img variants={textVariants} animate="animasi" initial="imageScroll" className="gambar" src="/agzal.png" alt="" />
       </motion.div>
     </div>
   );

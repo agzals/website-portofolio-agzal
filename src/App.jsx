@@ -6,8 +6,6 @@ import Parallax from "./components/parallax/Parallax";
 import Portfolio from "./components/portfolio/Portfolio";
 import Services from "./components/services/services";
 
-// import Test from "./Test";
-
 const App = () => {
   return (
     <div>
@@ -25,11 +23,9 @@ const App = () => {
         <Parallax type="portofolio" />
       </section>
       <Portfolio />
-      <section>
+      {/* <section>
         <Contact />
-      </section>
-      {/* <Test />
-      <Test /> */}
+      </section> */}
     </div>
   );
 };
