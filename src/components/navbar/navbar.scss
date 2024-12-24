@@ -1,6 +1,8 @@
 @import "../../app.scss";
 .navbar {
   height: 100px;
+  @include mobile {
+  }
 
   .wrapper {
     max-width: 1110px;
