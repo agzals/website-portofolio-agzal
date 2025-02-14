@@ -4,27 +4,27 @@ import { motion, useScroll, useSpring } from "framer-motion";
 const items = [
   {
     id: 1,
-    title: "E-commerce Website",
+    title: "UI/UX Design",
     img: "",
-    desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis, libero. Illo non dolorem rem illum vero numquam reiciendis animi cum?",
+    desc: "Jasa desain UI/UX untuk website/aplikasi anda yang akan membuat bisnis anda terlihat profesional. ",
   },
   {
     id: 2,
-    title: "E-commerce pempek",
+    title: "Website & Landing Page",
     img: "",
-    desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis, libero. Illo non dolorem rem illum vero numquam reiciendis animi cum?",
+    desc: "Kami dapat membuat,mengembangkan, dan maintenance situs web profesional perusahaan atau bisnis anda.",
   },
   {
     id: 3,
-    title: "E-commerce Website",
+    title: "Desain Graphic",
     img: "",
-    desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis, libero. Illo non dolorem rem illum vero numquam reiciendis animi cum?",
+    desc: "Layanan untuk kebutuhan permintaan desain perusahaan mulai dari,banner,poster,campaign marketing, hingga desain katalog produk.",
   },
   {
     id: 4,
-    title: "E-commerce Website",
+    title: "Social Media Management",
     img: "",
-    desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis, libero. Illo non dolorem rem illum vero numquam reiciendis animi cum?",
+    desc: "Kami handle sosial media brand anda mulai dari perencanaan konten, desain konten, posting, dan laporan analisis.",
   },
 ];
 
